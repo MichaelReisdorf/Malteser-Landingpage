@@ -1,0 +1,310 @@
+@import url('//db.onlinewebfonts.com/c/8a8da4e29aedaa26c72e1b57293ddf2d?family=AthelasW01-Regular');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{ 
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: url(../img/Background_Landing01.png) no-repeat;
+}
+/*----------------------Section1 Anfang---------------------------*/
+.sec1{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.2em;
+}
+.sec1 p{
+    font-size: 1.2em;
+}
+p:first-child{
+    color: rgba(255, 255, 255, 0.842);
+    padding-left:2em ;
+    padding-top:1em ;
+    font-family: 'AthelasW01-Regular', serif;
+    font-size: 1.2em;
+}
+.eins{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.sec1 h3{
+    font-size: 12em;
+    font-family: 'AthelasW01-Regular', serif;
+}
+i{
+    color: gray;
+    padding-top:0.5em;
+    font-size: 48px;
+    animation: plopp 5s ease-in-out infinite;
+}
+/*----------------------Section1 Ende---------------------------*/
+
+/*----------------------Section2 Anfang---------------------------*/
+.sec2{
+    padding-top: 1.5%;
+    transition: 3s; 
+    display: grid;
+    justify-content: center;
+    grid-gap:12em;
+    width: 100%;
+    height: 100vh;
+    text-align: center; 
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'gridDiv1 gridDiv1 gridDiv1 gridDiv2 gridDiv2 GridDiv2'
+                         'gridDiv3 gridDiv3 gridDiv4 gridDiv4 gridDiv5 gridDiv5'
+                         'gridDiv6 gridDiv6 gridDiv6 gridDiv6 gridDiv6 gridDiv6';
+                        
+}
+.sec2H1{
+    font-size: 2em;
+    padding-top: 2em;
+}
+.gridDiv1 {
+    grid-area: gridDiv1;
+    justify-content: center;
+  }
+  .gridDiv2{
+      grid-area: gridDiv2;
+  }
+  .gridDiv2 p{
+      padding-top: 6%;
+  }
+  .gridDiv3{
+    width: 250px;
+    height: 210px;
+    grid-area: gridDiv3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.gridDiv3 img{
+    padding-top: 2%;
+}
+.gridDiv3:hover{
+    transform: scale(1.2);
+    box-shadow:gray 0 0 10px ;
+    border-radius: 10%;
+}
+.gridDiv4{
+    display: flex;
+    width: 300px;
+    height: 210px;
+    grid-area: gridDiv4;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 4em;
+}
+.gridDiv4 img{
+    padding-top: 2%;
+}
+.gridDiv4:hover{
+    transform: scale(1.2);
+    box-shadow:gray 0 0 10px ;
+    border-radius: 10%;
+}
+.gridDiv5{
+    display: flex;
+    width: 250px;
+    height: 210px;
+    grid-area: gridDiv5;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.gridDiv5 img{
+    padding-top: 2%;
+}
+.gridDiv5:hover{
+    transform: scale(1.2);
+    box-shadow:gray 0 0 10px ;
+    border-radius: 10%;
+}
+.gridDiv6{
+    grid-area: gridDiv6;
+}
+.gridDiv1 img{
+    width: 400px;
+    height: 300px;
+    box-shadow: gray 0 0  20px;
+}
+.gridDiv3 img{
+    width: 50px;
+    height: 50px;
+}
+.gridDiv3 p{
+    margin:auto;
+}
+
+.gridDiv4 img{
+    width: 50px;
+    height: 50px;
+}
+.gridDiv4 p{
+    margin:auto;
+}
+.gridDiv5 img{
+    width: 50px;
+    height: 50px;
+}
+.gridDiv5 p{
+    margin:auto;
+}
+
+/*----------------------Section2 Ende---------------------------*/
+
+/*----------------------Section3 Anfang---------------------------*/
+.sec3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas: 'gridDivSec1 gridDivSec2'
+                        'gridDivSec1 gridDivSec2'
+                         'gridDivSec3 gridDivSec3';
+}
+.sec3 button{
+    color: #F0AA00;
+    border: 1px solid #F0AA00;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    font-size: 22px;
+    border-radius: 50px 50px 50px 50px;
+    margin-top: 50px;
+}
+.sec3 button:hover{
+    color: white;
+    border: 1px solid #F0AA00;
+    width: 200px;
+    height: 50px;
+    background-color: #F0AA00;
+    font-size: 22px;
+    border-radius: 50px 50px 50px 50px;
+}
+.gridDivSec1{
+    grid-area: gridDivSec1;
+     ;
+}
+.gridDivSec2{
+    grid-area: gridDivSec2;
+}
+.gridDivSec3{
+    grid-area: gridDivSec3;
+}
+/*----------------------Section3 Ende---------------------------*/
+
+/*----------------------Section4 Anfang---------------------------*/
+.sec4{
+    width: 100%;
+    height: 100vh;
+    
+}
+.caru{  
+    width: 100px;
+    height: 100px;
+}
+/*----------------------Section4 Ende---------------------------*/
+
+/*----------------------Section5 Anfang---------------------------*/
+.sec5{
+    width: 100%;
+    height: 100vh;
+    
+}
+/*----------------------Section5 Ende---------------------------*/
+
+
+@keyframes plopp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{    
+        transform: translateY(10px);
+        opacity: 0.3;
+    }
+    100%{   
+        transform: translateY(0);
+    }
+}
+footer{ 
+    height: 20vh;
+    background-color: yellowgreen;
+}
+
+
+
+/*___________responsiv__________________*/
+
+@media screen and (max-width: 812px) {
+    .sec2  {
+        width: 85%;
+        height: 100%;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        grid-template-areas: 
+        "gridDiv1 gridDiv1"
+        "gridDiv2 gridDiv2"
+        "gridDiv3 gridDiv3"
+        "gridDiv4 gridDiv4"
+        "gridDiv5 gridDiv5"
+        "gridDiv6 gridDiv6"                     ;
+}
+@media screen and ( max-width: 812px) {
+    .sec3  {
+        width: 85%;
+        height: 375px;
+        grid-template-columns: 1f 1fr 1fr;
+        grid-template-rows: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+        grid-template-areas: "gridDivSec1 gridDivSec1"
+                            "gridDivSec2 gridDivSec2"
+                             "gridDivSec3 gridDivSec3";
+}
+@media screen and (max-width: 812px) {
+    .sec4  {
+        width: 85%;
+        height: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+@media screen and (max-width: 812px) {
+    .sec5  {
+        width: 85%;
+        height: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
