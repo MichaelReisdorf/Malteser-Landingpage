@@ -190,7 +190,7 @@ i{
 }
 .sec3 p{
     padding-top: 6em;
-    font-size: 1.3em; 
+    font-size: 24px;
     text-align: center;
  }
 .gridDivSec3{
@@ -245,7 +245,7 @@ i{
 .sec4 h1{
     text-align: center;
     font-size: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 2em;
 }
 .smooth{
     display: flex;
@@ -266,12 +266,15 @@ img {vertical-align: middle;}
 
 
 .slideshow-container {
-  padding-top: 1%;
-  max-width: 15%; 
+  padding-bottom: 5% ;
+  max-width: 40%; 
   position: relative;
   margin: auto;
 }
-
+.test{
+    display: flex;
+    justify-content: center;
+}
 
 .prev{
   cursor: pointer;
@@ -302,18 +305,19 @@ img {vertical-align: middle;}
     user-select: none; 
 }
 
-/* Position the "next button" to the right */
+
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -324,7 +328,7 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -333,7 +337,7 @@ img {vertical-align: middle;}
   top: 0;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -349,7 +353,6 @@ img {vertical-align: middle;}
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -367,12 +370,12 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
 .stimme{
-    margin-top: 6em;
+    margin-top: em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,6 +408,20 @@ span{
     height: 100vh;
     
 }
+form{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    
+
+}
+.form1{
+    width: 40%;
+    height: 50%;
+    border: 1px solid gray;
+}
 /*----------------------Section5 Ende---------------------------*/
 
 
@@ -423,21 +440,42 @@ span{
 /*----------------footer----------------*/
 
 footer{ 
-    height: 25vh;
+    height: 30vh;
+    background-color: white;
 }
 .footerDiv1{
  
     display: flex;
     background-color: #172674;
     height: 10vh;
+    padding-top: 1em;
     
 }
 .footerSpan1{
     padding-left: 65%;
 }
-.footerSpan2{
-    color:white;
+.footerDiv2 p{
+    color: #172674;
+    margin: 15px;
+    height: 100%;
 }
+.footerDiv2 img{
+    margin: 15px;
+    width: 6.5%;
+    margin-left: 45px;
+}
+
+.google{
+    width:180px;
+    height: 180px;
+}
+.apple{
+    width:150px;
+    height: 150px;
+    margin-left: 100px;
+}
+
+
 
 
 
@@ -496,5 +534,3 @@ footer{
         align-items: center;
         flex-direction: column;
 }
-
-
