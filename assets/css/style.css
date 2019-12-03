@@ -185,6 +185,9 @@ i{
                         'gridDivSec1 gridDivSec2'
                          'gridDivSec3 gridDivSec3';
 }
+.sec2{
+    margin-bottom: 40vh;
+}
 .sec3 h1{
    font-size: 3em; 
 }
@@ -275,7 +278,9 @@ img {vertical-align: middle;}
     display: flex;
     justify-content: center;
 }
-
+button{
+    outline: none;
+}
 .prev{
   cursor: pointer;
   position: absolute;
@@ -375,7 +380,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}
 }
 .stimme{
-    margin-top: em;
+    margin-top:2vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -384,6 +389,8 @@ img {vertical-align: middle;}
     width: 90%;
     height: 20vh;
     margin-left: 6em;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 .stimme button{
     width: 20%;
@@ -404,24 +411,75 @@ span{
 
 /*----------------------Section5 Anfang---------------------------*/
 .sec5{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20vh;
+    text-align: center; 
     width: 100%;
-    height: 100vh;
-    
+    height: 100vh;  
 }
-form{
-    display: inline-flex;
+.sec5 div{
+    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 30%;
-    
+}
+.sec5 div:nth-of-type(1) h1{
+    font-size: 3em;
+    color: #182777;
+}
+.sec5 div:nth-of-type(1) p{
+    font-size: 1.5em;
+    color: #182777;
+}
+
+.sec5 div:nth-of-type(1){
+    align-items: flex-start;
+   
+}
+.form{
+    width: 40vw;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding-top:4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
 
 }
-.form1{
-    width: 40%;
-    height: 50%;
-    border: 1px solid gray;
+.form input{
+    height: 4vh;
+    border-bottom: 1px solid gray;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    outline: none;
 }
+.form button{
+    background-color: #182777;
+    height: 8vh;
+    margin-top: 3vh;
+    font-size: 1.1em;
+    width: 15vw;
+    color: white;
+    border-radius: 40px;
+}
+.form label{
+    text-align: left;
+    
+}
+.formDiv{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 50vh;
+ 
+}
+
+
 /*----------------------Section5 Ende---------------------------*/
 
 
@@ -499,6 +557,7 @@ footer{
         "gridDiv5 gridDiv5"
         "gridDiv6 gridDiv6"                     ;
 }
+}
 @media screen and ( max-width: 812px) {
     .sec3  {
         width: 85%;
@@ -513,6 +572,7 @@ footer{
         grid-template-areas: "gridDivSec1 gridDivSec1"
                             "gridDivSec2 gridDivSec2"
                              "gridDivSec3 gridDivSec3";
+    }
 }
 @media screen and (max-width: 812px) {
     .sec4  {
@@ -524,6 +584,7 @@ footer{
         align-items: center;
         flex-direction: column;
 }
+}
 @media screen and (max-width: 812px) {
     .sec5  {
         width: 85%;
@@ -533,4 +594,5 @@ footer{
         justify-content: center;
         align-items: center;
         flex-direction: column;
+ }
 }
